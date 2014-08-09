@@ -1,3 +1,5 @@
+#Set time into English
+Sys.setlocale("LC_TIME", "English")
 #Load Data
 data <- read.csv("household_power_consumption.txt",na.string="?",sep=";")
 
@@ -11,7 +13,7 @@ data$DateTime <- strptime(paste(data$Date, data$Time, sep=" "), format ="%d/%m/%
 png("plot2.png", width=480, height=480)
 
 #Plot the data
-plot(data$DateTime, data$Global_active_power, type="1",xlab="",ylab="Global Active Power (kilowatts)")
+plot(data$DateTime, data$Global_active_power, type="l",xlab="",ylab="Global Active Power (kilowatts)")
 
 #Turn off png device
 dev.off()
