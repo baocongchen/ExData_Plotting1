@@ -1,4 +1,4 @@
-#Set time into English
+#Set time
 Sys.setlocale("LC_TIME", "English")
 #Load Data
 data <- read.csv("household_power_consumption.txt",na.string="?",sep=";")
@@ -17,3 +17,4 @@ plot(data$DateTime, data$Global_active_power, type="l",xlab="",ylab="Global Acti
 
 #Turn off png device
 dev.off()
+

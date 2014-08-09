@@ -1,4 +1,4 @@
-#Set language to appear in graph
+#Set time
 Sys.setlocale("LC_TIME", "English")
 
 #Load data
